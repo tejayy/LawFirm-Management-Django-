@@ -30,7 +30,7 @@ class Case(models.Model):
     
     title = models.CharField(max_length=50)
     description = models.TextField()
-    status = models.CharField(max_length=5, choices=STATUS_CHOICES, default='OPEN')
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='OPEN')
     client = models.ForeignKey(Client, on_delete=models.CASCADE)
     lawyer = models.ForeignKey(Lawyer, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)

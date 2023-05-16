@@ -46,7 +46,7 @@ class ClientDeleteView(DeleteView):
 
 class LawyerListView(ListView):
     model = Lawyer
-    template_name = 'lawyer/lawyer_list.html'
+    template_name = 'lawyers/lawyer_list.html'
     
 class LawyerCreateview(CreateView):
     model = Lawyer
